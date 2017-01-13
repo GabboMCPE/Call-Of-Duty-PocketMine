@@ -1,0 +1,46 @@
+<?php
+
+ /*
+ *                
+ *
+ * Call Of Duty Plugin per PocketMine-MP & forks
+ *
+ * @Autore: GabboMCPE
+ * @Telegram: @GabboMCPE
+ * @Github: ?
+ *
+ *
+ */
+
+namespace GLS\COD;
+
+use pocketmine\plugin\PluginBase;
+use pocketmine\scheduler\PluginTask;
+use pocketmine\event\Listener;
+use pocketmine\command\CommandSender;
+use pocketmine\command\Command;
+use pocketmine\utils\TextFormat as TE;
+use pocketmine\utils\Config;
+use pocketmine\event\player\PlayerMoveEvent;
+use pocketmine\level\Position;
+use pocketmine\Player;
+use pocketmine\network\protocol\SetPlayerGameTypePacket;
+use pocketmine\event\player\PlayerItemConsumeEvent;
+use pocketmine\event\block\BlockBreakEvent;
+use pocketmine\event\block\BlockPlaceEvent;
+use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\player\PlayerLoginEvent;
+use pocketmine\event\player\PlayerChatEvent;
+use pocketmine\event\player\PlayerQuitEvent;
+use pocketmine\event\player\PlayerDeathEvent;
+use pocketmine\event\entity\EntityRegainHealthEvent;
+use pocketmine\event\entity\EntityDamageEvent;
+use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\entity\Effect;
+use pocketmine\tile\Sign;
+use pocketmine\level\Level;
+use pocketmine\item\Item;
+use onebone\economyapi\EconomyAPI;
+use pocketmine\level\sound\PopSound;
+use pocketmine\level\sound\AnvilUseSound;
+use pocketmine\block\Fire;
