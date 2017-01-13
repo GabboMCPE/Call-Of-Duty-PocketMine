@@ -3,3 +3,11 @@ main: GLF\COD\CODmain
 version: "1.0.0"
 api: [2.0.0, 2.1.0, 3.0.0-ALPHA1, 3.0.0]
 author: GabboMCPE
+
+commands:
+    cod:
+        usage: /cod crea <nomearena>
+        description: Crea una arena
+    codstart:
+        usage: /codstart
+        description: Forza l'inizio di una partita
